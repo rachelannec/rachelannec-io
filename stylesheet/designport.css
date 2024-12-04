@@ -10,7 +10,7 @@ body {
 
 #header-logo {
     height: auto;
-    width: 150px;
+    width: 100px;
     margin: 15px;
     padding-left: 20px;
 }
@@ -37,35 +37,32 @@ header {
 
 
 /* this is the part that makes the navbar horizontal */
-nav > .navbar-right > ul {
-    width: 35vw;
+nav > ul {
+    /* width: 35vw; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    float: right;
 }
 
 #navbar {
     width: 100%;
 }
 
-/* pretty self explanatory with its class name, right?! */
-.navbar-right {
-    float: right;
-}
 
-ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
   
-li {
+#navbar li {
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
 }
   
-li a {
+#navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -73,12 +70,16 @@ li a {
     text-decoration: none;
 }
 
+hr {
+    border: 3px;
+    margin: 100px auto;
+}
 
 
 /* -- PAG-PRAY NATIN CSS SKILLS KO!! HAHAHA -- */
 #home-all {
-    margin: 300px auto;
-    padding-top: 75px;
+    margin: 150px auto;
+    /* padding-top: 75px; */
     color: #fac209;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -104,13 +105,17 @@ li a {
 #about-div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #426317;
+    margin: 0 50px;
+    border-radius: 30px;
 }
 
 #about-all {
     color: #fff;
     font-size: 1.5rem;
-    margin: 200px;
-    width: 50%;
+    margin: 50px 150px;
+    /* width: 75%; */
     justify-content: center;
     align-items: center;
 }
@@ -127,7 +132,7 @@ li a {
 }
 
 #about-img {
-    margin: auto 75px;
+    margin: 25px auto;
     padding: 25px;
     height: auto;
     width: 300px;
