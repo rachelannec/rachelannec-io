@@ -98,7 +98,6 @@
     #about-div {
         display: flex;
         flex-wrap: wrap;
-        background-color: #426317;
         margin: 0 50px;
         border-radius: 30px;
     }
