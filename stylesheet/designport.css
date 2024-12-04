@@ -106,7 +106,7 @@ hr {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    background-color: #426317;
+    background-color: #20331b;
     margin: 0 50px;
     border-radius: 30px;
 }
@@ -130,10 +130,14 @@ hr {
     text-align: justify;
 }
 
+#about-div img {
+    object-fit: cover;
+}
+
 #about-img {
     margin: 25px;
     height: auto;
-    max-width: 100%;
+    max-width: 150px;
     background-color: whitesmoke;
     border-radius: 15%;
     display: flex;

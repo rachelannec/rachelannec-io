@@ -35,10 +35,16 @@
         justify-content: center;
     }
 
+    #about-div img {
+        object-fit: cover;
+    }
+
     #about-img {
         max-width: 100%;
         height: auto;
         margin: 25px;
+        align-items: center;
+
     }
     
 }
@@ -62,11 +68,11 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        margin: 25px 0;
+        margin: 10px 0;
     }
     #navbar li {
         display: inline;
-        padding: 10px 0;
+        padding: 5px 0;
     }
     #navbar a {
         text-decoration: none;
@@ -77,6 +83,18 @@
         color: #f2f2f2; 
     }
 
+    #about-all {
+        margin: 25px;
+    }
+
+    #about-all h1 {
+        font-size: 1.5rem;
+    }
+
+    #about-all p {
+        font-size: 1rem;
+    }
+
     #about-div {
         display: flex;
         flex-wrap: wrap;
@@ -85,10 +103,16 @@
         border-radius: 30px;
     }
 
+    #about-div img {
+        object-fit: cover;
+    }
+
     #about-img {
-        max-width: 100%;
+        width: 150px;
         height: auto;
-        margin: 25px;
+        margin: 25px auto;
+        display: flex;
+        justify-content: center;
     }
     
 }
