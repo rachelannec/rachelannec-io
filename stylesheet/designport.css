@@ -12,7 +12,6 @@ body {
     height: auto;
     width: 150px;
     margin: 15px;
-    padding-left: 20px;
 }
   
 header {
@@ -106,9 +105,7 @@ hr {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    background-color: #564100;
     margin: 0 50px;
-    border-radius: 30px;
 }
 
 #about-all {
@@ -117,6 +114,9 @@ hr {
     margin: 50px;
     justify-content: center;
     align-items: center;
+    background-color: #fac20923;
+    border-radius: 30px;
+    padding: 25px;
 }
 
 .about-introduction {
@@ -134,14 +134,17 @@ hr {
     object-fit: cover;
 }
 
+.about-in {
+    display: flex;
+    flex-direction: row;
+}
+
 #about-img {
     margin: 25px;
     height: auto;
-    max-width: 150px;
+    width: 300px;
     background-color: whitesmoke;
     border-radius: 15%;
-    display: flex;
-    justify-content: flex-end;
 }
 
 
