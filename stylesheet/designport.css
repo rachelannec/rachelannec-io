@@ -5,14 +5,13 @@
 }
 
 body {
-    background-color: #114932;
+    background-color: #202020;
 }
 
 #header-logo {
     height: auto;
     width: 150px;
     margin: 15px;
-    padding-left: 20px;
 }
   
 header {
@@ -27,7 +26,7 @@ header {
 }
 
 #header {
-    background-color: #215740;
+    background-color: #252525;
     width: 100%;
 }
 
@@ -78,7 +77,7 @@ hr {
 
 /* -- PAG-PRAY NATIN CSS SKILLS KO!! HAHAHA -- */
 #home-all {
-    margin: 10rem auto;
+    margin: 15% auto;
     /* padding-top: 75px; */
     color: #fac209;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -106,9 +105,7 @@ hr {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    background-color: #20331b;
     margin: 0 50px;
-    border-radius: 30px;
 }
 
 #about-all {
@@ -117,6 +114,9 @@ hr {
     margin: 50px;
     justify-content: center;
     align-items: center;
+    background-color: #fac20923;
+    border-radius: 30px;
+    padding: 25px;
 }
 
 .about-introduction {
@@ -134,14 +134,17 @@ hr {
     object-fit: cover;
 }
 
+.about-in {
+    display: flex;
+    flex-direction: row;
+}
+
 #about-img {
     margin: 25px;
     height: auto;
-    max-width: 150px;
+    width: 300px;
     background-color: whitesmoke;
     border-radius: 15%;
-    display: flex;
-    justify-content: flex-end;
 }
 
 
