@@ -2,18 +2,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+}
+
+:root{
+    --background-color: #eee;
+    --text-color: #333;
 }
 
 body{
-    background-color: #333;
-    color: #ddd;
+    /* background-color: #333;
+    color: #ddd; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: url('/assets/cursor.png'), auto;
+}
+
+.dark-theme{
+    --background-color: #333;
+    --text-color: #ddd;
+    transition: all 0.5s;
+}
+
+.light-theme{
+    --background-color: #eee;
+    --text-color: #333;
+    transition: all 0.5s;
+}
+
+
+#theme-toggle{
+    cursor: pointer;
+    font-size: 24px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
 hr{
-    border: 1px solid #ddd;
+    border: 1px solid;
+    color: var(--text-color);
 }
 
-a{
-    text-decoration: none;
-    color: #406ad3;
+.fa-brands, .fa-regular, .fa-solid{
+    color: var(--text-color);
+}
+
+.fa-brands:hover, .fa-regular:hover, .fa-solid:hover{
+    color: #ffa53e;
+    transform: scale(1.05);
+    transition: all 0.5s;
+
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+body:hover::after {
+    content: '';
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0.2s ease;
 }

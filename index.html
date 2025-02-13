@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachel Anne Cilon</title>
     <link rel="shortcut icon" href="assets/image.jpg" type="image/x-icon">
-    
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
-    
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d98f28db39.js" crossorigin="anonymous"></script>
+    <!-- kursor -->
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
 </head>
 <body>
     <div class="container">
@@ -19,6 +24,7 @@
             <h1>Rachel Anne Cilon</h1>
             <h3>Computer Science Student</h3>
         </header>
+        <i id="theme-toggle" class="fas fa-moon"></i>
         <hr>
         <section class="my-4">
             <h2>About Me</h2>
@@ -42,17 +48,18 @@
             <div class="row justify-content-center">
 
                 <a class="card col-md-3 mb-1 mx-1 h-100" href="https://github.com/rachelannec/random-string-generator">
-                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rachelannec&repo=random-string-generator" alt="">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rachelannec&repo=random-string-generator&theme=swift&description_lines_count=2" alt="">
                 </a>
                 <a class="card col-md-3 mb-1 mx-1 h-100" href="https://github.com/rachelannec/not-so-secured">
-                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rachelannec&repo=not-so-secured" alt="">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rachelannec&repo=not-so-secured&theme=swift&description_lines_count=2" alt="">
                 </a>
                 <a class="card col-md-3 mb-1 mx-1 h-100" href="https://github.com/rachelannec/tap-counter">
-                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rachelannec&repo=tap-counter" alt="">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rachelannec&repo=tap-counter&theme=swift&description_lines_count=2" alt="">
                 </a>
                 <a class="card col-md-3 mb-1 mx-1 h-100" href="https://github.com/rachelannec/c-micro">
-                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rachelannec&repo=c-micro" alt="">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=rachelannec&repo=c-micro&theme=swift&description_lines_count=2" alt="">
                 </a>
+                
                 
             </div>
         </section>
@@ -77,18 +84,23 @@
 
         <section class="my-4">
             <h2>Socials</h2>
-            <ul class="list-unstyled">
-                <li><a href="mailto:rachelannecilon@gmail.com">Email</a></li>
-                <li><a href="https://www.facebook.com/rachelannecilonlisay">Facebook</a></li>
-                <li><a href="https://www.instagram.com/rachelcilon/">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/in/rachel-anne-cilon/">LinkedIn</a></li>
-            </ul>
+                <div class="socials">
+                    <a href="mailto:rachelannecilon@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2x"></i></a>
+                    <a href="https://www.facebook.com/rachelannecilonlisay" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/rachelcilon/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/rachel-anne-cilon/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/rachelannec" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                </div>
         </section>
         
         <hr>
         <footer class="text-center my-5">
-            <p>Have a nice day! 😎👌</p>
+            <p>&copy;&nbsp;<span id="current-year"></span>&nbsp;Rachel Anne Cilon</p>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="kursor.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
