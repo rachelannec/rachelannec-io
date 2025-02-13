@@ -1,7 +1,3 @@
-new kursor({
-    type: 1,
-    removeDefaultCursor: true,
-})
 
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme-toggle');

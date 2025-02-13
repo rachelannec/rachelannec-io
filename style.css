@@ -15,7 +15,7 @@ body{
     color: #ddd; */
     background-color: var(--background-color);
     color: var(--text-color);
-    cursor: url('/assets/cursor.png'), auto;
+    cursor: url('/assets/cursor.png') , auto;
 }
 
 .dark-theme{
@@ -59,7 +59,7 @@ hr{
     transition: all 0.5s;
 }
 
-body:hover::after {
+/* body:hover::after {
     content: '';
     position: fixed;
     width: 20px;
@@ -69,4 +69,4 @@ body:hover::after {
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: transform 0.2s ease;
-}
+} */
