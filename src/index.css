@@ -1,0 +1,361 @@
+/* Import Bootstrap */
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-color: #0056b3;
+  --accent-color: #ffc107;
+}
+
+.dark-mode, [data-theme="dark"] {
+  --primary-color: #ffc107;
+  --secondary-color: #adb5bd;
+  --bg-color: #121212;
+  --text-color: #f8f9fa;
+  --card-bg: #1e1e1e;
+  --border-color: #495057;
+  --shadow-color: rgba(255, 255, 255, 0.05);
+  --hover-color: #ffd54f;
+  --accent-color: #007bff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: var(--bg-color);
+  max-width: 1000px;
+  padding: 20px;
+  position: relative;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 1000;
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  box-shadow: 0 2px 10px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+/* Typography */
+h1 {
+  color: var(--primary-color);
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary-color);
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Text Styles */
+.text-justify {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--card-bg);
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px var(--shadow-color);
+  border-color: var(--primary-color);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Lists */
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-unstyled li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: var(--bg-color);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.list-unstyled li:hover {
+  transform: translateX(5px);
+  background-color: var(--card-bg);
+}
+
+.list-unstyled strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Social Links */
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.socials a:hover {
+  transform: translateY(-5px) scale(1.1);
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.socials svg {
+  font-size: 1.5rem;
+}
+
+/* HR Styles */
+hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    var(--primary-color), 
+    transparent);
+  margin: 40px 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  .socials a {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .socials svg {
+    font-size: 1.3rem;
+  }
+  
+  .theme-toggle {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .socials {
+    gap: 15px;
+  }
+  
+  .socials a {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .socials svg {
+    font-size: 1.2rem;
+  }
+  
+  .text-justify {
+    font-size: 1rem;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading Animation */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Grid System Enhancement */
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 0;
+}
+
+/* Print Styles */
+@media print {
+  .theme-toggle,
+  .socials a:hover,
+  .card:hover {
+    display: none !important;
+  }
+  
+  .container {
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+}
