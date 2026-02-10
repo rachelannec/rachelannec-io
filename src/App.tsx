@@ -4,6 +4,7 @@ import About from './components/About';
 import Archives from './components/Archives';
 import Socials from './components/Socials';
 import ThemeToggle from './components/ThemeToggle';
+import OrganizationalRoles from './components/OrganizationRoles';
 import './index.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Header />
       <hr />
       <About />
+      <OrganizationalRoles />
       <Archives />
       <Socials />
       <hr />
