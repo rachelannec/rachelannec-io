@@ -40,7 +40,7 @@ const OrganizationalRoles = (): React.JSX.Element => {
       <div>
         {organizationalRoles.map((item, index) => (
           <div key={index} className="col">
-            <div className="card h-100 border-0 shadow-sm">
+            <div className="card h-100">
               <div className="card-body">
                 <div className="mb-3">
                   <div>
@@ -52,18 +52,6 @@ const OrganizationalRoles = (): React.JSX.Element => {
                 
                 <div className="card-text">
                   <p className="mb-0">{item.description}</p>
-                </div>
-                
-                <div className="mt-3 pt-3 border-top">
-                  <div className="d-flex align-items-center">
-                    <span className="ms-auto right">
-                      {item.date.includes('Present') ? (
-                        <span className="badge">Active</span>
-                      ) : (
-                        <span className="badge">Completed</span>
-                      )}
-                    </span>
-                  </div>
                 </div>
               </div>
             </div>

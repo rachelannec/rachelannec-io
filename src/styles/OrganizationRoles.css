@@ -9,10 +9,10 @@
     height: 100%;
     box-shadow: 0 4px 12px var(--shadow-color);
     position: relative;
+    margin: 1.5rem 0;
 }
 
 .card:hover {
-    /* transform: translateY(-8px); */
   box-shadow: 0 15px 35px var(--shadow-color);
   border-color: var(--primary-color);
 }
