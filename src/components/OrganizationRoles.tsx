@@ -47,7 +47,7 @@ const OrganizationalRoles = (): React.JSX.Element => {
                     <h5 className="card-title mb-1">{item.organization}</h5>
                     <h6 className="card-subtitle text-primary mb-2">{item.role}</h6>
                   </div>
-                  <span className="badge bg-primary">{item.date}</span>
+                  <span className="card-date">{item.date}</span>
                 </div>
                 
                 <div className="card-text">
