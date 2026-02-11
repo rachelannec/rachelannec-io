@@ -21,7 +21,7 @@ const Socials = (): React.JSX.Element => {
   ];
 
   return (
-    <section className="my-4 socials">
+    <section className="my-4 social">
       <h2>Socials</h2>
       <div className="socials">
         {socialLinks.map((social, index) => (
