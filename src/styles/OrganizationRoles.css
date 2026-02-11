@@ -50,3 +50,38 @@
     font-weight: 600;
     z-index: 1;
 }
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    margin-top: 20px;
+  } 
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.col {
+  animation: fadeInUp 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+/* Stagger animation for cards */
+.col:nth-child(1) { animation-delay: 0.1s; }
+.col:nth-child(2) { animation-delay: 0.2s; }
+.col:nth-child(3) { animation-delay: 0.3s; }
+.col:nth-child(4) { animation-delay: 0.4s; }
+.col:nth-child(5) { animation-delay: 0.5s; }
+.col:nth-child(6) { animation-delay: 0.6s; }

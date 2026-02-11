@@ -40,18 +40,19 @@ const OrganizationalRoles = (): React.JSX.Element => {
       <div>
         {organizationalRoles.map((item, index) => (
           <div key={index} className="col">
-            <div className="card h-100">
-              <div className="card-body">
-                <div className="mb-3">
-                  <div>
-                    <h5 className="card-title mb-1">{item.organization}</h5>
-                    <h6 className="card-subtitle text-primary mb-2">{item.role}</h6>
+            <div className="org-card">
+              <div className="card h-100">
+                <div className="card-body">
+                  <div className="mb-3">
+                    <div>
+                      <h5 className="card-title mb-1">{item.organization}</h5>
+                      <h6 className="card-subtitle text-primary mb-2">{item.role}</h6>
+                    </div>
+                    <span className="card-date">{item.date}</span>
+                  </div>                 
+                  <div className="card-text">
+                    <p className="mb-0">{item.description}</p>
                   </div>
-                  <span className="card-date">{item.date}</span>
-                </div>
-                
-                <div className="card-text">
-                  <p className="mb-0">{item.description}</p>
                 </div>
               </div>
             </div>
