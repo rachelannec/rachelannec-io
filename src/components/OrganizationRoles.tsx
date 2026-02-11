@@ -58,13 +58,6 @@ const OrganizationalRoles = (): React.JSX.Element => {
                   <div className="d-flex align-items-center">
                     <i className="fas fa-calendar-alt text-muted me-2"></i>
                     <small className="text-muted">{item.date}</small>
-                    <span className="ms-auto right">
-                      {item.date.includes('Present') ? (
-                        <span className="badge bg-success">Active</span>
-                      ) : (
-                        <span className="badge bg-secondary">Completed</span>
-                      )}
-                    </span>
                   </div>
                 </div>
               </div>
