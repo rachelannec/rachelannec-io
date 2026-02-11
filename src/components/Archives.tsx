@@ -84,7 +84,7 @@ const Archives = (): React.JSX.Element => {
                       rel="noopener noreferrer"
                       className="project-link project-link-primary"
                     >
-                      <span>🌐</span> Live Demo
+                      <span>🌐</span> Demo
                     </a>
                   ) : (
                     <span 
