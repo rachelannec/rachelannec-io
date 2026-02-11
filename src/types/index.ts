@@ -21,4 +21,5 @@ export interface OrgRole {
     organization: string;
     role: string;
     date: string;
+    description: string;
 }
