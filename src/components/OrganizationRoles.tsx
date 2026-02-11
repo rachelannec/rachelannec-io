@@ -31,7 +31,7 @@ const OrganizationalRoles = (): React.JSX.Element => {
   ];
 
   return (
-    <section className="my-4">
+    <section className="my-4 orgs">
       <div className="mb-4">
         <h2>Organizational Roles</h2>
         <p className="text-muted">Leadership positions in student organizations</p>
