@@ -2,15 +2,15 @@
 @import 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
 
 :root {
-  --primary-color: #007bff;
+  --primary-color: #02a247;
   --secondary-color: #6c757d;
   --bg-color: #ffffff;
   --text-color: #212529;
   --card-bg: #ffffff;
   --border-color: #dee2e6;
   --shadow-color: rgba(0, 0, 0, 0.1);
-  --hover-color: #0056b3;
-  --accent-color: #ffc107;
+  --hover-color: #00b342;
+  --accent-color: #ff7207;
 }
 
 .dark-mode, [data-theme="dark"] {
@@ -21,8 +21,8 @@
   --card-bg: #1e1e1e;
   --border-color: #495057;
   --shadow-color: rgba(255, 255, 255, 0.05);
-  --hover-color: #ffd54f;
-  --accent-color: #007bff;
+  --hover-color: #ff9b4f;
+  --accent-color: #00ff91;
 }
 
 * {

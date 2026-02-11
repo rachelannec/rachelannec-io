@@ -22,7 +22,7 @@
 }
 
 .card-title {
-    color: #2d3748;
+    color: var(--text-color);
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -33,30 +33,11 @@
 }
 
 .card-text p {
-    color: #495057;
+    color: var(--secondary-color);
     line-height: 1.6;
     font-size: 0.95rem;
 }
 
 badge{
     z-index: 10;
-}
-
-/* Dark Mode */
-.dark-mode .card {
-    background-color: var(--card-color);
-    border: 1px solid #444;
-}
-
-.dark-mode .card:hover {
-    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05) !important;
-    border-color: #00d4ff;
-}
-
-.dark-mode .card-title {
-    color: #f8f9fa;
-}
-
-.dark-mode .card-text p {
-    color: #e9ecef;
 }
