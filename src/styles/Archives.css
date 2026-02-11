@@ -1,11 +1,3 @@
-/* Archives.css - Specific styling for Archives component */
-
-/* Archives Section Container */
-.archives-section {
-  margin: 3rem 0;
-  padding: 0 0.5rem;
-}
-
 /* Section Title */
 .archives-title {
   color: var(--text-color);

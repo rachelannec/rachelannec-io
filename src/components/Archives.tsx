@@ -42,7 +42,7 @@ const Archives = (): React.JSX.Element => {
   ];
 
   return (
-    <section className="archives-section">
+    <section className="my-4 archives">
       <h2 className="archives-title">Archives</h2>
       
       {projects.length === 0 ? (
