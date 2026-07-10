@@ -7,13 +7,13 @@ const OrganizationalRoles = (): React.JSX.Element => {
     {
       organization: "PUP The Programmers' Guild",
       role: 'AVP for Membership and Student Affairs',
-      date: '2025 - Present',
+      date: '2025 - 2026',
       description: 'Leading initiatives to enhance member engagement and support student development within the organization.'
     },
     {
       organization: 'Google Developer Groups on Campus PUP',
       role: 'Compliance Analyst for Web Development Team',
-      date: '2025 - Present',
+      date: '2025 - 2026',
       description: 'Ensuring adherence to web development standards and best practices, while supporting the team in creating compliant and efficient web applications.'
     },
     {
